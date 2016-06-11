@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable = no">
+    <link rel="icon" href="img/fav.png">
+    <meta charset="UTF-8">
+    <title>Live24.az</title>
+    <link href="css/icon.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
+    <link href="css/bakcell.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="wrapper">
+    <div class="headerBack">
+        <div id="header">
+            <div class="headerWrap">
+                <a href="./" class="logo"><img src="img/logob.png"> </a><!-- logo -->
+
+                <div class="nav">
+
+                    <ul class="languages">
+                        <li>
+                            <a class="lang" data-lang="az">Az</a>
+                        </li>
+                        <li>
+                            <a class="lang" data-lang="ru">Ru</a>
+                        </li>
+                        <li>
+                            <a class="lang" data-lang="en">En</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#home" translate>home</a>
+                        </li>
+                        <li>
+                            <a class="live" href="#online" translate>online_matches</a>
+                        </li>
+                        <li>
+                            <a href="#groups" translate>euro2016</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- nav -->
+            </div>
+
+        </div>
+    </div>
+    <div id="main">
+
+    </div>
+
+    <div id="loading">
+        <div id='loader'>
+            <div class='diamond'></div>
+            <div class='diamond'></div>
+            <div class='diamond'></div>
+        </div>
+    </div>
+</div>
+<!-- wrapper -->
+
+
+<div id="temp" style="display: none;">
+
+    <div id="listPage">
+        <div class="listName">
+            <span class="name"></span>
+        </div>
+        <ul class="matchtable">
+
+        </ul>
+        <a id="loadmore" data-page="0" translate>loadmore</a>
+
+    </div>
+
+
+    <div id="homePage">
+        <div class="listName">
+            <span class="leftbtn"><i class="icon icon-arrow-left"></i></span>
+            <span class="name"></span>
+            <span class="rightbtn"><i class="icon icon-arrow-right"></i></span>
+
+        </div>
+        <ul class="matchtable">
+
+        </ul>
+
+    </div>
+
+
+    <div id="groupPage">
+        <div class="listName"><span translate>euro2016</span></div>
+        <ul class="groups">
+
+        </ul>
+
+    </div>
+
+    <table id="groupTable">
+        <tr class="teamrow">
+            <td class="team_name"></td>
+            <td class="team_matches"></td>
+            <td class="team_point"></td>
+            <td class="team_win"></td>
+            <td class="team_draw"></td>
+            <td class="team_lose"></td>
+            <td class="team_goal"></td>
+        </tr>
+    </table>
+
+    <ul class="match">
+        <li class="team1">
+            <span></span>
+        </li>
+        <li class="score">
+            <ul>
+                <li class="scoreTeam1"></li>
+                <li class="scoreDivider">:</li>
+                <li class="scoreTeam2"></li>
+            </ul>
+            <div class="matchTime"></div>
+        </li>
+        <li class="team2">
+            <span></span>
+        </li>
+    </ul>
+
+
+    <div class="matchPage">
+
+        <div class="tournamentName"></div>
+
+        <div class="teams">
+            <div class="nameTeam1"><span></span></div>
+            <div class="nameDivider">-</div>
+            <div class="nameTeam2"><span></span></div>
+        </div>
+        <!-- teams -->
+
+        <div class="stadion">
+            <div class="scorePanel">
+                <div class="scoreContainer">
+
+                    <div class="scoreCurrent">
+                        <div class="scoreTeam1"></div>
+                        <div class="scoreDivider">:</div>
+                        <div class="scoreTeam2"></div>
+                    </div>
+                    <!-- scoreCurrent -->
+
+                    <div class="goals"></div>
+                    <!-- goals -->
+
+                </div>
+                <!-- scoreContainer -->
+
+                <div class="matchTime"></div>
+                <!-- matchTime -->
+
+            </div>
+            <!-- scorePanel -->
+
+        </div>
+        <!-- stadion -->
+
+        <div class="matchStats">
+            <ul class="tabHead">
+                <li class="active"><a translate>lineups</a></li>
+                <li><a translate>statistics</a></li>
+            </ul>
+            <ul class="tabContent">
+                <li class="active">
+                    <div id="lineUps">
+                        <div class="team"></div>
+                        <div class="team"></div>
+                    </div>
+                </li>
+                <li>
+                    <div id="statistics">
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div id="goalRecord" class="goal">
+        <div class="player"></div>
+        <div class="time">15'</div>
+        <div class="player"></div>
+    </div>
+
+
+</div>
+
+
+<script src="js/jquery.min.js" type="application/javascript"></script>
+<script src="js/moment.js" type="application/javascript"></script>
+<script src="js/app.js" type="application/javascript"></script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-79143045-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

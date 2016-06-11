@@ -1,0 +1,163 @@
+/*
+This file is codded by Bahram Hasanov.
+http://bahramhasanov.com
+2015.
+*/
+
+#loading {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+
+/*
+* HEADER
+*/
+
+.headerBack {
+    background: url("../img/header.jpg") no-repeat left bottom;
+    background-size: cover;
+}
+
+#header {
+    background: rgba(0, 0, 0, 0.7);
+    border-bottom: 10px solid #E00034;
+}
+
+/******************************
+* HOMEPAGE
+******************************/
+
+/* matchtable */
+
+
+#main .listName {
+    background: #000;
+    color: #fff;
+    border-bottom: 5px solid #fff;
+}
+
+#main .listName span.leftbtn,
+#main .listName span.rightbtn {
+    background: #E00034;
+    color: #fff;
+}
+
+#main .matchtable .tournament .tournamentTitle {
+    background: #000;
+    color: #fff;
+}
+
+#main .matchtable .tournament .tournamentTitle  a{
+    color: #fff;
+}
+
+
+#main .matchtable .date .dateTitle{
+    background: #E00034;
+    color: #fff;
+}
+
+
+#main .matchtable .matchlist .match {
+    background: rgba(0, 176, 146,0.5);
+}
+
+#main .matchtable .matchlist .match li.score {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+#main .matchtable .matchlist .match li.score.online {
+    background: rgba(153, 1, 8, 0.7);
+}
+#main .matchtable .matchlist .match li.score.ended {
+    background: rgba(0, 0, 0, 1);
+}
+
+#main #loadmore{
+    background: #E00034;
+    border-top: 2px solid #fff;
+    color: #fff;
+}
+
+
+/*******************
+* GROUPS
+******************/
+
+.groups .table .tableTitle{
+    background: #E00034;
+    color: #fff;
+}
+
+
+/********************
+* MATCH PAGE
+********************/
+
+.matchPage  .tournamentName {
+    color: #000;
+}
+
+.matchPage  .tournamentName span {
+    cursor: pointer;
+}
+
+.matchPage  .teams {
+    color: #000;
+}
+
+.matchPage .stadion {
+    background: url("../img/stadion_bak.png") no-repeat bottom center;
+    background-size: contain;
+}
+
+.matchPage .stadion .scorePanel {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+.matchPage .stadion .scorePanel .scoreCurrent {
+    color: #fff;
+}
+
+
+.matchPage .stadion .scorePanel .goals {
+   color: #fff;
+}
+
+.matchPage .stadion .scorePanel .matchTime {
+    background: rgba(224, 0, 52, 0.7);
+    line-height: 40px;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+}
+
+.matchPage .stadion .scorePanel .matchTime.ended {
+    background: rgba(0, 0, 0, 1);
+}
+.matchPage .stadion .scorePanel .matchTime.online {
+    background: rgba(153, 1, 8, 0.7);
+}
+
+.matchPage .matchStats {
+    background: #00B092;
+}
+
+ul.tabHead li a {
+    border: none;
+    color: #ffffff;
+    background: #E00034;
+}
+
+ul.tabHead li.active a {
+    border: none;
+    background: #000;
+    color: #fff;
+}
+
+ul.tabContent {
+    background: #000;
+    color: #fff;
+}

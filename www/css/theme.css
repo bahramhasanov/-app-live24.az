@@ -1,0 +1,805 @@
+/*
+This file is codded by Bahram Hasanov.
+http://bahramhasanov.com
+2015.
+*/
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+
+    /*background: url('../img/bg.jpg') no-repeat; */
+    background-size: cover;
+
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#loading {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 28, 50, 0.8);
+
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/*
+* HEADER
+*/
+
+.headerBack {
+    background: url("../img/header.jpg") no-repeat left bottom;
+    background-size: cover;
+}
+
+#header {
+    padding: 10px 20px;
+    background: rgba(0, 28, 50, 0.7);
+    border-bottom: 10px solid #57aefc;
+    margin-bottom: 10px;
+}
+
+#header :after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#header  .headerWrap{
+    max-width: 800px;
+
+    margin: 0 auto;
+
+}
+
+#header  .logo {
+
+    display: inline-block;
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 20px 0;
+}
+
+#header  .logo img{
+    height: 60px;
+}
+
+#header  .nav {
+    float: right;
+    padding: 15px;
+}
+
+#header  .nav ul {
+    padding: 0;
+    text-align: right;
+    display: block;
+}
+
+#header  .nav ul.languages{
+
+    margin-bottom: 15px;
+}
+
+#header  .nav ul li {
+    display: inline-block;
+}
+
+#header  .nav ul li a {
+    display: inline-block;
+    padding:5px 10px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#header  .nav ul li a.live {
+    background: #E00034;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#header  .nav ul li a.lang {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    #header  {
+        padding: 20px;
+    }
+
+
+    #header  .logo {
+        margin: 15px 5px;
+        display: block;
+        text-align: center;
+    }
+
+    #header  .nav {
+        float: none;
+        padding: 5px;
+    }
+
+    #header  .nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    #header  .nav ul.languages{
+        
+        position: absolute;
+
+        right: 5px;
+        top: 5px;
+
+        z-index: 10000;
+        
+    }
+
+
+    #header  .nav ul li {
+        display: inline-block;
+    }
+
+}
+
+/******************************
+* HOMEPAGE
+******************************/
+
+/* matchtable */
+
+#main {
+    max-width: 800px;
+
+    margin: 0 auto;
+}
+
+#main .listName {
+    background: #001c32;
+    color: #fff;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+    font-size: 18px;
+    display: table;
+    width: 100%;
+}
+
+#main .listName span {
+    display: table-cell;
+    padding: 10px 5px;
+
+}
+
+#main .listName span.leftbtn,
+#main .listName span.rightbtn {
+    width: 42px;
+    background: #448fea;
+    color: #001c32;
+    cursor: pointer;
+}
+
+
+#main .matchtable {
+
+}
+
+#main .matchtable {
+    margin-bottom: 20px;
+}
+
+#main .matchtable .tournament .tournamentTitle {
+    display: block;
+    background: #001c32;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+#main .matchtable .tournament .tournamentTitle  a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+#main .matchtable .date .dateTitle{
+    display: block;
+    background: #448fea;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+#main .matchtable .date .dateTitle{
+    text-align: right;
+}
+
+#main .matchtable .matchlist {
+    margin-bottom: 10px;
+}
+
+#main .matchtable .matchlist .match {
+    background: rgba(87, 174, 252, 0.7);
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+#main .matchtable .matchlist .match > li {
+    display: block;
+    padding: 5px 20px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+#main .matchtable .matchlist .match li.team1,
+#main .matchtable .matchlist .match li.team2{
+    display: table;
+    height: 49px;
+}
+#main .matchtable .matchlist .match li.team1 span,
+#main .matchtable .matchlist .match li.team2 span{
+    display: table-cell;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+#main .matchtable .matchlist .match li.team1{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    padding-right:
+    50px;
+}
+
+#main .matchtable .matchlist .match li.team2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+
+    padding-left: 50px;
+    text-align: right;
+}
+
+#main .matchtable .matchlist .match li.score {
+    background: rgba(0, 28, 50, 0.7);
+    font-weight: bold;
+    color: #fff;
+    padding: 5px 10px;
+    width: 100px;
+    margin: 0 auto;
+    z-index: 1000;
+    line-height: 39px;
+}
+
+#main .matchtable .matchlist .match li.score.online {
+    background: rgba(153, 1, 8, 0.7);
+    line-height: 14px;
+}
+#main .matchtable .matchlist .match li.score.ended {
+    background: rgba(0, 0, 0, 1);
+    line-height: 14px;
+}
+
+#main .matchtable .matchlist .match li.score ul {
+    display: none;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#main .matchtable .matchlist .match li.score.online ul,
+#main .matchtable .matchlist .match li.score.ended ul {
+    display: table;
+}
+
+
+#main .matchtable .matchlist .match li.score ul li {
+    display: table-cell;
+    padding: 0 5px;
+    vertical-align: middle;
+}
+
+#main .matchtable .matchlist .match li.score ul li.scoreDivider {
+    width: 10%;
+    text-align: center;
+}
+
+#main .matchtable .matchlist .match li.score ul li.scoreTeam1 {
+    width: 45%;
+    text-align: right;
+}
+
+#main .matchtable .matchlist .match li.score ul li.scoreTeam2 {
+    width: 45%;
+    text-align: left;
+}
+
+#main .matchtable .matchlist .match li.score .matchTime {
+    text-align: center;
+    font-weight: normal;
+}
+
+#main .matchtable .error{
+    padding: 10px;
+    margin: 5px 0;
+    background: #E00034;
+    color: #fff;
+    text-align: center;
+}
+
+#main #loadmore{
+
+    display: block;
+    background: #001c32;
+    border-top: 2px solid #fff;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/*******************
+* GROUPS
+******************/
+
+
+.groups .table{
+
+    margin-bottom: 20px;
+
+}
+
+.groups .table .tableTitle{
+    background: #448fea;
+    color: #fff;
+    padding: 5px 10px;
+}
+.groups .table .tableTitle a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.groups .teamlist{
+
+    width: 100%;
+
+}
+
+.groups .teamlist .team_name{
+    width: 30%;
+    min-width: 100px;
+}
+
+
+.groups .teamlist .team_name a{
+    color: #000;
+    text-decoration: none;
+}
+
+.groups .teamlist .teamrow{
+    border-bottom: 1px solid #57aefc;
+}
+
+.groups .teamlist tr td{
+    text-align: center;
+}
+
+.groups .teamlist tr td:first-child{
+    text-align: left;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+
+/********************
+* MATCH PAGE
+********************/
+
+.matchPage {
+
+}
+
+
+
+.matchPage  .tournamentName {
+    text-align: center;
+    color: #001c32;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 10px 0;
+    padding: 5px 20px;
+}
+
+.matchPage  .tournamentName span {
+    cursor: pointer;
+}
+
+.matchPage  .teams {
+    display: table;
+    width: 100%;
+    color: #001c32;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.matchPage  .teams .nameTeam1,
+.matchPage  .teams .nameTeam2 {
+    display: table-cell;
+    width: 49%;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.matchPage  .teams .nameTeam1 span,
+.matchPage  .teams .nameTeam2 span {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.matchPage  .teams .nameTeam1 span span,
+.matchPage  .teams .nameTeam2 span span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.matchPage  .teams .nameTeam1 img,
+.matchPage  .teams .nameTeam2 img{
+    height: 40px;
+    margin: 0 10px;
+}
+
+
+.matchPage  .teams .nameDivider {
+    display: table-cell;
+    width: 2%;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.matchPage  .teams .nameTeam1 {
+    text-align: right;
+}
+
+
+
+
+.matchPage .stadion {
+    padding: 60px 0;
+    background: url("../img/stadion.png") no-repeat bottom center;
+    background-size: contain;
+}
+
+.matchPage .stadion .scorePanel {
+    width: 50%;
+    min-width: 275px;
+    margin: 0 auto;
+    background: rgba(68, 143, 234, 0.7);
+    padding-top: 10px;
+}
+
+.matchPage .stadion .scorePanel .scoreContainer {
+    vertical-align: middle;
+    display: table;
+    width: 100%;
+}
+
+.matchPage .stadion .scorePanel .scoreCurrent {
+
+    display: table;
+    width: 100%;
+    font-size: 40px;
+    color: #001c32;
+    font-weight: bold;
+}
+
+.matchPage .stadion .scorePanel .scoreCurrent .scoreDivider {
+    display: table-cell;
+    width: 5%;
+    padding: 0 10px;
+}
+
+.matchPage .stadion .scorePanel .scoreCurrent .scoreTeam1,
+.matchPage .stadion .scorePanel .scoreCurrent .scoreTeam2 {
+    display: table-cell;
+    width: 47.5%;
+    padding: 0 10px;
+}
+
+.matchPage .stadion .scorePanel .scoreCurrent .scoreTeam1 {
+    text-align: right;
+}
+
+.matchPage .stadion .scorePanel .scoreCurrent .scoreDivider {
+    text-align: center;
+}
+
+.matchPage .stadion .scorePanel .goals {
+    margin: 10px 0;
+}
+
+.matchPage .stadion .scorePanel .goals .goal {
+    display: table;
+    width: 100%;
+}
+
+.matchPage .stadion .scorePanel .goals .goal .player,
+.matchPage .stadion .scorePanel .goals .goal .time {
+    display: table-cell;
+}
+
+.matchPage .stadion .scorePanel .goals .goal .time {
+    width: 15%;
+    text-align: center;
+}
+
+.matchPage .stadion .scorePanel .goals .goal .player {
+    padding: 0 5px;
+    line-height: 20px;
+    width: 42.5%;
+    overflow: hidden;
+}
+
+.matchPage .stadion .scorePanel .goals .goal .player:nth-child(1) {
+    text-align: right;
+}
+
+.matchPage .stadion .scorePanel .matchTime {
+    background: rgba(0, 28, 50, 0.7);
+    line-height: 40px;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+}
+
+.matchPage .stadion .scorePanel .matchTime.ended {
+    background: rgba(0, 0, 0, 1);
+}
+.matchPage .stadion .scorePanel .matchTime.online {
+    background: rgba(153, 1, 8, 0.7);
+}
+
+.matchPage .matchStats {
+    background: rgb(137, 198, 253);
+    padding: 20px;
+}
+
+ul.tabHead {
+
+}
+
+ul.tabHead li {
+    display: inline-block;
+}
+
+ul.tabHead li a {
+    display: block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: 1px solid #001c32;
+    border-bottom: none;
+    font-size: 15px;
+    line-height: 20px;
+    color: #001c32;
+    background: #448fea;
+    cursor: pointer;
+}
+
+ul.tabHead li:last-child a {
+    margin-right: 0;
+}
+
+ul.tabHead li.active a {
+    background: #001c32;
+    color: #fff;
+}
+
+ul.tabContent {
+    border: 1px solid #001c32;
+    padding: 10px;
+    background: rgba(68, 143, 234, 0.44);
+}
+
+ul.tabContent li {
+    display: none;
+}
+
+ul.tabContent li.active {
+    display: block;
+    min-height: 200px;
+}
+
+#lineUps {
+    display: table;
+    width: 100%;
+}
+
+#lineUps .team {
+    display: table-cell;
+    width: 50%;
+}
+
+#lineUps .team .player {
+    display: table;
+    width: 100%;
+}
+
+#lineUps .team .player div {
+    display: table-cell;
+}
+
+#lineUps .team .player .number {
+    width: 20%;
+    max-width: 20px;
+}
+
+#lineUps .team .player .name {
+    width: 80%;
+}
+
+
+.statistic{
+    margin: 5px 0;
+}
+
+.statistic .title{
+    text-align: center;
+}
+
+.statistic .bar{
+    display: table;
+    width: 100%;
+    font-size: 10px;
+}
+
+.statistic .bar .part{
+    height: 10px;
+    display: table-cell;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+.statistic .bar .part:first-child{
+    background: #E00034;
+}
+.statistic .bar .part:last-child{
+    background: #ffffff;
+    text-align: right;
+    color: #E00034;
+}
+
+
+
+
+
+
+/* LOADING ANIMATION */
+
+#loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 200px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#loader .diamond {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 10px auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: url(../img/ball.svg) no-repeat center #fff;
+    background-size: cover;
+    -webkit-transform: translateY(0) rotate(45deg) scale(0);
+    transform: translateY(0) rotate(45deg) scale(0);
+    -webkit-animation: diamonds 1500ms linear infinite;
+    animation: diamonds 1500ms linear infinite;
+}
+#loader .diamond:nth-child(1) {
+    -webkit-animation-delay: -1000ms;
+    animation-delay: -1000ms;
+}
+#loader .diamond:nth-child(2) {
+    -webkit-animation-delay: -2000ms;
+    animation-delay: -2000ms;
+}
+#loader .diamond:nth-child(3) {
+    -webkit-animation-delay: -3000ms;
+    animation-delay: -3000ms;
+}
+#loader .diamond:nth-child(4) {
+    -webkit-animation-delay: -4000ms;
+    animation-delay: -4000ms;
+}
+
+@-webkit-keyframes diamonds {
+    50% {
+        -webkit-transform: translateY(-50px) rotate(45deg) scale(1);
+        transform: translateY(-50px) rotate(45deg) scale(1);
+    }
+    100% {
+        -webkit-transform: translateY(-100px) rotate(45deg) scale(0);
+        transform: translateY(-100px) rotate(45deg) scale(0);
+    }
+}
+
+@keyframes diamonds {
+    50% {
+        -webkit-transform: translateY(-50px) rotate(45deg) scale(1);
+        transform: translateY(-50px) rotate(45deg) scale(1);
+    }
+    100% {
+        -webkit-transform: translateY(-100px) rotate(45deg) scale(0);
+        transform: translateY(-100px) rotate(45deg) scale(0);
+    }
+}
+
+
+/*  blinking  */
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+
+.online {
+    animation:fade 1000ms infinite;
+    -webkit-animation:fade 1000ms infinite;
+}
+
+.live {
+    animation:fade 2000ms infinite;
+    -webkit-animation:fade 2000ms infinite;
+}
