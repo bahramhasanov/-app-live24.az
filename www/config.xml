@@ -40,8 +40,8 @@
     <plugin name="cordova-plugin-whitelist"           source="npm" spec="~1.2.1" />
 
     <!-- Define app icon and splashscreen for each platform. -->
-    <icon src="icon.png" />
-    
+    <icon src="img/icon.png" />
+    <splash src="img/splash.png" />
     <!--
         Define access to external domains.
 
@@ -52,6 +52,7 @@
     -->
 	
 	<access origin="http://live24.az" /> 
+	<access origin="https://ls.sportradar.com/" /> 
 	
     <!-- <access origin="*" /> -->
     <!--
